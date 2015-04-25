@@ -1,0 +1,22 @@
+SMAP
+admin_005fchange_005fpwd_005faction_jsp.java
+JSP
+*S JSP
+*F
++ 0 admin_change_pwd_action.jsp
+admin_change_pwd_action.jsp
++ 1 header.jsp
+header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+5,4:52
+8:55,9
+9,5:64
+5#1,69:68
+13#0,8:136
+21,44:145
+64,6:189
+5#2,51:195
+69#0,3:246
+*E

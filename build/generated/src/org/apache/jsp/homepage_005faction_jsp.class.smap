@@ -1,0 +1,23 @@
+SMAP
+homepage_005faction_jsp.java
+JSP
+*S JSP
+*F
++ 0 homepage_action.jsp
+homepage_action.jsp
++ 1 header.jsp
+header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+5,2:52
+11,2:54
+13:56,9
+14,5:65
+5#1,69:69
+18#0,8:137
+26,24:146
+49,6:170
+5#2,51:176
+54#0,4:227
+*E

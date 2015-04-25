@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://facile/" xmlns:tns="http://facile/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="bus_display_details" type="tns:bus_display_details"/>
+
+  <xs:element name="bus_display_detailsResponse" type="tns:bus_display_detailsResponse"/>
+
+  <xs:element name="busdetails" type="tns:busdetails"/>
+
+  <xs:element name="busdetailsResponse" type="tns:busdetailsResponse"/>
+
+  <xs:element name="getDestination" type="tns:getDestination"/>
+
+  <xs:element name="getDestinationResponse" type="tns:getDestinationResponse"/>
+
+  <xs:element name="hello" type="tns:hello"/>
+
+  <xs:element name="helloResponse" type="tns:helloResponse"/>
+
+  <xs:element name="near_taxi_list" type="tns:near_taxi_list"/>
+
+  <xs:element name="near_taxi_listResponse" type="tns:near_taxi_listResponse"/>
+
+  <xs:element name="taxiUpdate" type="tns:taxiUpdate"/>
+
+  <xs:element name="taxiUpdateResponse" type="tns:taxiUpdateResponse"/>
+
+  <xs:element name="taxiregistration" type="tns:taxiregistration"/>
+
+  <xs:element name="taxiregistrationResponse" type="tns:taxiregistrationResponse"/>
+
+  <xs:element name="user_registration" type="tns:user_registration"/>
+
+  <xs:element name="user_registrationResponse" type="tns:user_registrationResponse"/>
+
+  <xs:complexType name="taxiUpdate">
+    <xs:sequence>
+      <xs:element name="taxi_id" type="xs:string" minOccurs="0"/>
+      <xs:element name="taxi_status" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="taxiUpdateResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="hello">
+    <xs:sequence>
+      <xs:element name="something" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="busdetails">
+    <xs:sequence>
+      <xs:element name="current_place" type="xs:string" minOccurs="0"/>
+      <xs:element name="destination" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="busdetailsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="taxiregistration">
+    <xs:sequence>
+      <xs:element name="drivers_name" type="xs:string" minOccurs="0"/>
+      <xs:element name="taxi_number" type="xs:string" minOccurs="0"/>
+      <xs:element name="contact_number" type="xs:string" minOccurs="0"/>
+      <xs:element name="location" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="taxiregistrationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="near_taxi_list">
+    <xs:sequence>
+      <xs:element name="c_locaation" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="near_taxi_listResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="bus_display_details">
+    <xs:sequence>
+      <xs:element name="c_location" type="xs:string" minOccurs="0"/>
+      <xs:element name="destination" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="bus_display_detailsResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="user_registration">
+    <xs:sequence>
+      <xs:element name="u_name" type="xs:string" minOccurs="0"/>
+      <xs:element name="u_email_id" type="xs:string" minOccurs="0"/>
+      <xs:element name="u_phone" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="user_registrationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDestination">
+    <xs:sequence>
+      <xs:element name="c_location" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getDestinationResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+

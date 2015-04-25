@@ -1,0 +1,27 @@
+SMAP
+approve_jsp.java
+JSP
+*S JSP
+*F
++ 0 approve.jsp
+approve.jsp
++ 1 header.jsp
+header.jsp
++ 2 footer.jsp
+footer.jsp
+*L
+5,4:52
+8:55,9
+9,4:64
+5#1,69:67
+12#0,59:135
+71,9:195
+79,3:204
+82,4:207,3
+86:219,5
+87,3:224
+90,4:228
+93,9:232
+5#2,51:241
+101#0,3:292
+*E
